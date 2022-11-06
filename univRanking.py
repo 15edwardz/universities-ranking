@@ -78,6 +78,7 @@ class CSVData:
         except:
             print("file not found")
 
+    # Adds uniData and the respective capitals and continents to a new uniDataCapital list
     def cleanUpCapital(self):
         uniDataCapital = self.uniData.copy()
         for uniList in uniDataCapital:
@@ -90,7 +91,7 @@ class CSVData:
         print(uniDataCapital)
         return uniDataCapital
 
-
+# ...
 def uniNum(uniInfo, cleanData):
     totalUni = (cleanData.getUniData()[-1][0])
     uniInfo.write("Total number of universities => {}".format(totalUni))

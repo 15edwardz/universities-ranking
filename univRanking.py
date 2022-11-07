@@ -91,7 +91,7 @@ class CSVData:
         print(uniDataCapital)
         return uniDataCapital
 
-# ...
+# Finds the number of universities in the list
 def uniNum(uniInfo, cleanData):
     totalUni = (cleanData.getUniData()[-1][0])
     uniInfo.write("Total number of universities => {}".format(totalUni))

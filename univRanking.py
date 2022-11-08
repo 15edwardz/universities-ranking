@@ -158,8 +158,8 @@ def averageScore(selectedCountry, uniInfo, cleanData):
     relScore = round(avg/float(continentHighScore)*100.00,2)
 
     # Writes information into output.txt
-    uniInfo.write("\nThe average score => {:.2f}%".format(avg))
-    uniInfo.write("\nThe relative score to the top university in {} is => ({} / {}) x 100% = {:.2f}%".format(continent.upper(), avg, float(continentHighScore), relScore))
+    uniInfo.write("\nThe average score => {}%".format(avg))
+    uniInfo.write("\nThe relative score to the top university in {} is => ({} / {}) x 100% = {}%".format(continent.upper(), avg, float(continentHighScore), relScore))
 
 # Finds the capital city of selectedCountry
 def capitalCity(selectedCountry, uniInfo, cleanData):
@@ -209,4 +209,3 @@ def getInformation(selectedCountry, rankingFileName, capitalsFileName):
     containCapital(selectedCountry, uniInfo, cleanData)
 
 
-getInformation("China", "TopUni.csv", "capitals.csv")
